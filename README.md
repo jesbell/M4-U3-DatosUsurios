@@ -12,7 +12,7 @@ Se consume la siguiente [API](https://randomuser.me/api/?results=5000), con el o
 Estas instrucciones te guiarán para obtener una copia de este proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 ```bash
-git clone url-github
+git clone git@github.com:jesbell/M4-U3-DatosUsurios.git
 ```
 
 ### Prerrequisitos 📋
