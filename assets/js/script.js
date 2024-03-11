@@ -6,11 +6,12 @@ const userData = (() => {
       let data = await response.json();
       const userInfo = data.results
         .map(
-          (i) =>
-            `<div class="card mb-3 container" style="max-width: 540px;">
+          (i) =>/* En la siguiente sección se agrega nuestra estructura
+          html que se ira mostrando en nuestro index.html*/
+            `<div class="card mb-3 container px-0" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src='${i.picture.large}' class="img-fluid rounded-start" alt="...">
+                  <img src='${i.picture.large}' class="img-fluid rounded" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -18,7 +19,7 @@ const userData = (() => {
                     <p class="card-text">${i.email}</p>
                     <p class="card-text">${i.cell}</p>
                   </div>
-                </div>
+                </div>                
               </div>
             </div>`
         )
